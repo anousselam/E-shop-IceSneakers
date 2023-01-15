@@ -1,0 +1,57 @@
+﻿@model Dotnet6MvcLogin.Models.DTO.LoginModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>login</title>
+        
+
+ 
+</head>
+<body>
+	
+    <div class="container">
+        <div class="row1">
+            <div class="col-md-6 mt-2 center-block">
+                <h3>Login</h3>
+
+              <form asp-action="Login" method="post">
+  
+  
+                <label asp-for="Username"><b>Username</b></label>
+                <input type="text" asp-for="Username" placeholder="Enter Username">
+                        <div class="msg">
+                        <span class="err" asp-validation-for="Username"></span>
+                        </div>
+
+            
+
+                   <label asp-for="Password"><b>Password</b></label>
+                   <input  type="password" asp-for="Password" placeholder="Enter Password">
+                            <div class="msg">
+                            <span asp-validation-for="Password" class="err"></span>
+                            </div>
+
+
+    @if(TempData["msg"]!=null){
+                <div class="msg">@TempData["msg"]</div>
+    }   
+             </form>
+
+                <button type="submit" class="btn btn-info">Login</button>
+                <br>
+                <br>
+
+             <a class="text-alert" href="/UserAuthentication/Registration">Not a user? Signup</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
