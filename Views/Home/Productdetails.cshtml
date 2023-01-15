@@ -1,0 +1,164 @@
+﻿@{
+    ViewData["Title"] = "Productdetails";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="small-container single-product">
+	<div class="row">
+		<div class="col-2">
+			<img src="~/images/nk_dunk_blue.jpg" width="100%"
+				 id="ProductImg">
+			<div class="small-img-row">
+				<div class="small-img-col">
+					<img src="~/images/nk_dunk_blue.jpg" width="100%"
+						 class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="~/images/sp-blue-bk.jpg" width="100%"
+						 class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="~/images/sp-blue-sd.jpg" width="100%"
+						 class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="~/images/sp-blue-fr.jpg" width="100%"
+						 class="small-img">
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<p>Home / products /</p>
+			<h1>Nike Dunk Low SP BLUE</h1>
+			<h4>380dh</h4>
+			<select>
+				<option>Select Size</option>
+				<option>38</option>
+				<option>39</option>
+				<option>40</option>
+				<option>41</option>
+				<option>42</option>
+				<option>43</option>
+			</select>
+			<input type="number" value="1">
+			<a href="@Url.Action("cart","Home")">
+				-------------------------------
+				<input type="button" class="btn"
+					   value="Add to Cart" />
+			</a>
+			<h3>Product Description <i class="fas fa-indent"></i></h3>
+			<br>
+			<p>
+				Nike celebrated the 35th Anniversary of the Nike Dunk by
+				releasing the Nike Dunk Low SP Syracuse (2020),
+				now available at ICE Sneakers.
+			</p>
+		</div>
+	</div>
+</div>
+<!--------------- title  ---------->
+<div class="small-container">
+	<div class="row row-2">
+		<h2>Related Products</h2>
+		<p>View More</p>
+	</div>
+
+</div>
+
+	<! ---------------- products  ------------>
+<div class="small-container">
+
+
+	<div class="row">
+		<div class="col-4">
+			<img src="~/images/nk_dunk_blue.jpg">
+			<h4>Nike Dunk Low SP BLUE</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/nk_dunk_orange.jpg">
+			<h4>Nike Dunk Low SP ORANGE </h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/jordan1_grey.jpg">
+			<h4>Jordan 1 Mid Light Smoke</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/yeezy_v2.jpg">
+			<h4>Adidas Yeezy Boost 350 V2</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+
+	</div>
+
+
+
+
+</div>
+<script> 
+	var MenuItems = document.getElementById("MenuItems");
+	MenuItems.style.maxHeight = "0px";
+	function menutoggle(){
+	if(MenuItems.style.maxHeight == "0px"){
+		MenuItems.style.maxHeight = "200px";
+		}
+	else{
+		MenuItems.style.maxHeight = "0px";
+	}
+
+	}
+	</script>
+	<!--------------- js for product gallery  ----------->
+	<script>
+	var ProductImg = document.getElementById("ProductImg");
+	var SmallImg = document.getElementsByClassName("small-img");
+	SmallImg[0].addEventListener("click",f0 );
+	SmallImg[1].addEventListener("click",f1 );
+	SmallImg[2].addEventListener("click",f2 );
+	SmallImg[3].addEventListener("click",f3 );
+
+	function f0(){
+	 ProductImg.src = SmallImg[0].src;
+	}
+	function f1(){
+	 ProductImg.src = SmallImg[1].src;
+	}
+	function f2(){ 
+	 ProductImg.src = SmallImg[2].src;
+	}
+	function f3(){
+	 ProductImg.src = SmallImg[3].src;
+	}
+
+	</script>
