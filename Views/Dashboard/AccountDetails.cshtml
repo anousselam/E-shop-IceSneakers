@@ -1,0 +1,17 @@
+﻿
+
+@page
+@model Dotnet6MvcLogin.Views.Home.AccountDetailsModel
+@{
+}
+@{
+	string username = User.Identity.Name;
+	string email;
+	Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<div>
+
+	welcome @username
+	
+	
+</div>

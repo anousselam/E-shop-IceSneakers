@@ -1,0 +1,306 @@
+﻿@{
+	string username = User.Identity.Name;
+	Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<div>
+   
+    welcome @username
+
+</div>
+<div class="small-container">
+	<div class="row row-2">
+		<h2>All Products</h2>
+		<select>
+			<option>Default Sorting</option>
+			<option>Sort by Price (high-low)</option>
+			<option>Sort by Popularity</option>
+			<option>Sort by Rating</option>
+			<option>Sort by Sale</option>
+		</select>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col-4">
+			<img src="~/images/yeezy.jpg">
+			<h4>Adidas Yeezy boost 350</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/jordan1.jpg">
+			<h4>Nike Air Jordan </h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/af1.jpg">
+			<h4>Nike Air Force 1</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/jordan_low.jpg">
+			<h4>Nike Jordan 1 LOW</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<a href="@Url.Action("Productdetails","Home")">
+				<img src="~/images/nk_dunk_blue.jpg">
+			</a>ù
+			<h4>Nike Dunk Low SP BLUE</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/nk_dunk_orange.jpg">
+			<h4>Nike Dunk Low SP ORANGE </h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/jordan1_grey.jpg">
+			<h4>Jordan 1 Mid Light Smoke</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/yeezy_v2.jpg">
+			<h4>Adidas Yeezy Boost 350 V2</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<img src="~/images/yeezy_450.jpg">
+			<h4>Adidas Yeezy 450</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/air_max_95.jpg">
+			<h4>Nike Air Max 95</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>299MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/j1_tscot.jpg">
+			<h4>Jordan 1 Low Fragment x Travis Scott</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>279MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/am_97.jpg">
+			<h4>Air Max 97 Triple White Wolf Grey</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<img src="~/images/yeezy_500.jpg">
+			<h4>Adidas Yeezy 500 Ash Grey</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>380MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/j1_tscot_high.jpg">
+			<h4>Jordan 1 Retro High x Travis Scott</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>299MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/nk_vp.jpg">
+			<h4>Nike Air VaporMax Plus Triple Black</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>279MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/nk_cb.jpg">
+			<h4>Nike Cortez Basic (2019)</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>259MAD</p>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<img src="~/images/nb_992.jpg">
+			<h4>New Balance 992 Grey</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>279MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/nk_am_95.jpg">
+			<h4>Nike Air Max 95</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>279MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/af1_b.jpg">
+			<h4>Nike Air Force 1 Low</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>279MAD</p>
+		</div>
+		<div class="col-4">
+			<img src="~/images/nk_sb_bw.jpg">
+			<h4>Nike SB Dunk Low Ben & Jerry's Chunky Dunky</h4>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+			<p>369MAD</p>
+		</div>
+
+	</div>
+	<div class="page-btn">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+		<span>&#8594</span>
+	</div>
+
+</div>
+<!---------------  offers ---------->
+<!----------------  testimonial  --------->
+<!---------------- brands   ----------->
+<!---------JS  --------->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+	MenuItems.style.maxHeight = "0px";
+	function menutoggle() {
+		if (MenuItems.style.maxHeight == "0px") {
+			MenuItems.style.maxHeight = "200px";
+		}
+		else {
+			MenuItems.style.maxHeight = "0px";
+		}
+
+	}
+</script>
